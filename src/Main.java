@@ -1,10 +1,8 @@
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-
         Map<Integer, String> channels = new HashMap<>();
         channels.put(1, "BBC");
         channels.put(2, "CNN");
@@ -16,10 +14,8 @@ public class Main {
         channels.put(8, "HBO");
         channels.put(9, "Discovery Channel");
         channels.put(10, "National Geographic");
-
         Scanner in = new Scanner(System.in);
         testGettingElement(channels, in);
-
         testRemovingElement(channels, in);
     }
     private static void testGettingElement(Map<Integer, String> channels, Scanner in) {
@@ -44,5 +40,4 @@ public class Main {
         }
         System.out.println("TV Channels: " + channels);
     }
-
 }
